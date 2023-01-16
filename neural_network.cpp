@@ -30,7 +30,7 @@ Net::Net(const vector<unsigned> &topology)
         // we have made a new layer, now fill it with ith neurons and
         // add a bias neuron to the layer
 
-        for (unsigned neuronNum = 0; neuronNum < topology[layerNum]; ++neuronNum)
+        for (unsigned neuronNum = 0; neuronNum <= topology[layerNum]; ++neuronNum)
         {
             m_layers.back().push_back(Neuron());
 
